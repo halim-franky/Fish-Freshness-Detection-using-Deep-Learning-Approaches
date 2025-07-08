@@ -52,9 +52,15 @@ Processes image patches using self-attention mechanisms, capturing global image 
 Combines local feature extraction (VGG16) and global representation (ViT) through concatenated feature embeddings.
 
 # 🔄 Project Pipeline
-```
-Dataset --> Dataset Splitting (Train/Val/Test) --> Data Augmentation (Balancing Classes) Image Preprocessing (Resize 224x224, Normalize) --> Model Training (VGG16 | ViT | VGG16+ViT) --> Evaluation: Accuracy, Confusion Matrix, F1-Score --> Insights & Limitations
-```
+graph TD
+    A[Raw Dataset] --> B[Dataset Splitting (Train/Val/Test)]
+    B --> C[Data Augmentation (Balancing Classes)]
+    C --> D[Image Preprocessing (Resize 224x224, Normalize)]
+    D --> E[Model Training]
+    E --> F[VGG16 | ViT | VGG16+ViT]
+    F --> G[Evaluation: Accuracy, Confusion Matrix, F1-Score]
+    G --> H[Insights & Limitations]
+
 
 # 📊 Performance Summary
 
