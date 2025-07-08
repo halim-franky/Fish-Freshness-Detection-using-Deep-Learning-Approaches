@@ -52,56 +52,57 @@ Processes image patches using self-attention mechanisms, capturing global image 
 Combines local feature extraction (VGG16) and global representation (ViT) through concatenated feature embeddings.
 
 # 🔄 Project Pipeline
-🔄 Project Pipeline
+
+
 The following pipeline outlines the key steps taken to develop and evaluate the fish freshness detection system:
 
 1. Dataset Preparation
-Downloaded and organized the Freshness of Fish Eyes Dataset
+- Downloaded and organized the Freshness of Fish Eyes Dataset
 
-Split into Train (70%), Validation (20%), and Test (10%)
+- Split into Train (70%), Validation (20%), and Test (10%)
 
-Resized all images to 224x224 pixels
+- Resized all images to 224x224 pixels
 
 2. Data Augmentation & Balancing
-Applied transformations to underrepresented classes:
+- Applied transformations to underrepresented classes:
 
-Rotation, Shift, Zoom, Flip, Shear
+- Rotation, Shift, Zoom, Flip, Shear
 
-Balanced all classes to ensure fair model training
+- Balanced all classes to ensure fair model training
 
 3. Image Preprocessing
-Normalized pixel values between 0 and 1
+- Normalized pixel values between 0 and 1
 
-Verified class distributions and visual quality
+- Verified class distributions and visual quality
 
 4. Model Training
-Model 1: VGG16 – Convolutional Neural Network (CNN)
+- Model 1: VGG16 – Convolutional Neural Network (CNN)
 
-Model 2: Vision Transformer (ViT) – Self-attention-based model
+- Model 2: Vision Transformer (ViT) – Self-attention-based model
 
-Model 3: Hybrid VGG16 + ViT – Combined feature fusion
+- Model 3: Hybrid VGG16 + ViT – Combined feature fusion
 
-Used transfer learning with ImageNet weights
+- Used transfer learning with ImageNet weights
 
-Fine-tuned top layers after initial training
+- Fine-tuned top layers after initial training
 
 5. Evaluation
-Assessed models on the test set using:
+- Assessed models on the test set using:
 
-Accuracy
+- Accuracy
 
-Confusion Matrix
+- Confusion Matrix
 
-Precision, Recall, F1-Score
+- Precision, Recall, F1-Score
 
-Visualized classification results for analysis
+- Visualized classification results for analysis
 
 6. Result Interpretation
-Compared performance across models
+- Compared performance across models
 
-Analyzed model biases and misclassifications
+- Analyzed model biases and misclassifications
 
-Discussed potential improvements and limitations
+- Discussed potential improvements and limitations
 
 
 
