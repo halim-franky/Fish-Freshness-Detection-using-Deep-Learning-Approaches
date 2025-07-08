@@ -52,15 +52,23 @@ Processes image patches using self-attention mechanisms, capturing global image 
 Combines local feature extraction (VGG16) and global representation (ViT) through concatenated feature embeddings.
 
 # 🔄 Project Pipeline
+```
 Dataset --> Dataset Splitting (Train/Val/Test) --> Data Augmentation (Balancing Classes) Image Preprocessing (Resize 224x224, Normalize) --> Model Training (VGG16 | ViT | VGG16+ViT) --> Evaluation: Accuracy, Confusion Matrix, F1-Score --> Insights & Limitations
+```
 
 # 📊 Performance Summary
 
 
 Model	Test Accuracy	Notes
-VGG16	56.49%	Strongest generalization on "Fresh" class
-ViT	52.61%	Struggled with minority classes
-Hybrid Model	54.35%	Biased toward "Not Fresh"; needs optimization
+
+
+VGG16	56.49% (Strongest generalization on "Fresh" class)
+
+
+ViT	52.61% (Struggled with minority classes)
+
+
+Hybrid Model	54.35%	(Biased toward "Not Fresh"; needs optimization)
 
 ![image](https://github.com/user-attachments/assets/0758d22f-3647-49e5-8439-c06db2d29b83)
 
