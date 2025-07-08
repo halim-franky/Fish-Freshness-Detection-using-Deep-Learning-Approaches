@@ -9,12 +9,13 @@ This project investigates the use of deep learning architectures—VGG16, Vision
 Ensuring the freshness of fish is critical for public health, food safety, and minimizing economic losses in seafood logistics. Traditional inspection methods are often subjective and inconsistent. In this project, we employ computer vision and transfer learning techniques to automate freshness detection using eye images from The Freshness of Fish Eyes Dataset.
 
 The classification task categorizes images into three classes:
+<ul>
+<li>Highly Fresh</li>
 
-Highly Fresh
+<li>Fresh</li>
 
-Fresh
-
-Not Fresh
+<li>Not Fresh</li>
+</ul>
 
 Despite class imbalances and subtle visual differences, our models attempt to generalize across categories through data augmentation and fine-tuning.
 
@@ -69,6 +70,8 @@ Model	Test Accuracy	Notes
 VGG16	56.49%	Strongest generalization on "Fresh" class
 ViT	52.61%	Struggled with minority classes
 Hybrid Model	54.35%	Biased toward "Not Fresh"; needs optimization
+
+![image](https://github.com/user-attachments/assets/0758d22f-3647-49e5-8439-c06db2d29b83)
 
 # 🧪 Challenges & Limitations
 
@@ -142,4 +145,4 @@ Apply custom attention mechanisms for fine-grained classification.
 Package as a mobile app for fish vendors and consumers.
 
 
-![image](https://github.com/user-attachments/assets/0758d22f-3647-49e5-8439-c06db2d29b83)
+
