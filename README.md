@@ -1,7 +1,7 @@
 # 🐟 Fish Freshness Detection using Deep Learning
 
 
-This project investigates the use of deep learning architectures—VGG16, Vision Transformer (ViT), and a hybrid VGG16-ViT model—to automatically classify fish freshness based on eye image data. It addresses the real-world challenge of subjective and labor-intensive fish freshness assessment, offering a foundation for developing scalable, AI-driven quality control solutions in the seafood industry.
+This project investigates the use of deep learning architectures including VGG16, Vision Transformer (ViT), and a hybrid VGG16-ViT model. This project use these deep learning models to automatically classify fish freshness based on eye image data. It addresses the real-world challenge of subjective and labor-intensive fish freshness assessment, offering a foundation for developing scalable, AI-driven quality control solutions in the seafood industry.
 
 # 📘 Project Summary
 
@@ -26,11 +26,14 @@ Develop a deep learning pipeline to classify fish freshness using fish eye image
 
 Compare performance across:
 
-VGG16 (CNN-based)
+<ul>
+<li>VGG16 (CNN-based)</li>
 
-Vision Transformer (ViT) (Transformer-based)
+<li>Vision Transformer (ViT) (Transformer-based)</li>
 
-Hybrid VGG16-ViT model
+<li>Hybrid VGG16-ViT model</li>
+
+</ul>
 
 Address dataset imbalance with augmentation.
 
@@ -49,19 +52,7 @@ Processes image patches using self-attention mechanisms, capturing global image 
 Combines local feature extraction (VGG16) and global representation (ViT) through concatenated feature embeddings.
 
 # 🔄 Project Pipeline
-
-
-mermaid
-Copy
-Edit
-graph TD
-    A[Raw Dataset] --> B[Dataset Splitting (Train/Val/Test)]
-    B --> C[Data Augmentation (Balancing Classes)]
-    C --> D[Image Preprocessing (Resize 224x224, Normalize)]
-    D --> E[Model Training]
-    E --> F[VGG16 | ViT | VGG16+ViT]
-    F --> G[Evaluation: Accuracy, Confusion Matrix, F1-Score]
-    G --> H[Insights & Limitations]
+Dataset --> Dataset Splitting (Train/Val/Test) --> Data Augmentation (Balancing Classes) Image Preprocessing (Resize 224x224, Normalize) --> Model Training (VGG16 | ViT | VGG16+ViT) --> Evaluation: Accuracy, Confusion Matrix, F1-Score --> Insights & Limitations
 
 # 📊 Performance Summary
 
@@ -75,35 +66,32 @@ Hybrid Model	54.35%	Biased toward "Not Fresh"; needs optimization
 
 # 🧪 Challenges & Limitations
 
+<ul>
+<li>Class Imbalance: "Fresh" images dominate the dataset.</li>
 
-Class Imbalance: "Fresh" images dominate the dataset.
+<li>Visual Similarity: Eye features between freshness categories are often subtle.</li>
 
-Visual Similarity: Eye features between freshness categories are often subtle.
+<li>Overfitting Risks: Especially during hybrid training.</li>
 
-Overfitting Risks: Especially during hybrid training.
+<li>ViT Complexity: Requires substantial computational power.</li>
 
-ViT Complexity: Requires substantial computational power.
-
-Transfer Learning Bias: Pre-trained weights from ImageNet may not be well-suited to fish eye domains.
+<li>Transfer Learning Bias: Pre-trained weights from ImageNet may not be well-suited to fish eye domains.</li>
+</ul>
 
 # 🔧 Libraries & Installation
 
 
-Install Requirements
-bash
-Copy
-Edit
+Install Requirements:
+```
 pip install tensorflow==2.15.0 matplotlib opencv-python seaborn vit-keras tensorflow_addons
-Key Libraries
-TensorFlow / Keras
+```
 
-vit-keras
-
-OpenCV
-
-matplotlib, seaborn
-
-scikit-learn
+Key Libraries:
+- TensorFlow / Keras
+- vit-keras
+- OpenCV
+- matplotlib, seaborn
+- scikit-learn
 
 # 📁 Dataset
 
@@ -114,35 +102,36 @@ Classes: Highly Fresh, Fresh, Not Fresh
 
 Preprocessing:
 
-Resized to 224×224 pixels
+1. Resized to 224×224 pixels
 
-Normalized pixel values (0–1)
+2. Normalized pixel values (0–1)
 
-Augmentation applied to underrepresented classes:
+3. Augmentation applied to underrepresented classes:
 
-Rotation (30°), width/height shift (20%), shear (20%), zoom (20%), horizontal flip
+4. Rotation (30°), width/height shift (20%), shear (20%), zoom (20%), horizontal flip
 
 # 🧪 Evaluation Metrics
 
+<ul>
+<li>Accuracy</li>
 
-Accuracy
+<li>Precision / Recall / F1-Score</li>
 
-Precision / Recall / F1-Score
+<li>Confusion Matrix</li>
 
-Confusion Matrix
-
-Evaluation was performed on the 10% held-out test set after fine-tuning.
+<li>Evaluation was performed on the 10% held-out test set after fine-tuning.</li>
+</ul>
 
 # 📌 Future Directions
 
+<ul>
+<li>Integrate gill and skin features to improve classification.</li>
 
-Integrate gill and skin features to improve classification.
+<li>Expand dataset diversity (species, lighting, angles).</li>
 
-Expand dataset diversity (species, lighting, angles).
+<li>Apply custom attention mechanisms for fine-grained classification.</li>
 
-Apply custom attention mechanisms for fine-grained classification.
-
-Package as a mobile app for fish vendors and consumers.
-
+<li>Package as a mobile app for fish vendors and consumers.</li>
+</ul>
 
 
