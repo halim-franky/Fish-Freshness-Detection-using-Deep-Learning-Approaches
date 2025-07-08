@@ -3,7 +3,7 @@
 
 This project investigates the use of deep learning architectures—VGG16, Vision Transformer (ViT), and a hybrid VGG16-ViT model—to automatically classify fish freshness based on eye image data. It addresses the real-world challenge of subjective and labor-intensive fish freshness assessment, offering a foundation for developing scalable, AI-driven quality control solutions in the seafood industry.
 
-#📘 Project Summary
+# 📘 Project Summary
 
 
 Ensuring the freshness of fish is critical for public health, food safety, and minimizing economic losses in seafood logistics. Traditional inspection methods are often subjective and inconsistent. In this project, we employ computer vision and transfer learning techniques to automate freshness detection using eye images from The Freshness of Fish Eyes Dataset.
