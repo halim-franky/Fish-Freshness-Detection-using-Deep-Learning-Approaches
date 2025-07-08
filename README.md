@@ -59,16 +59,12 @@ Dataset --> Dataset Splitting (Train/Val/Test) --> Data Augmentation (Balancing 
 # 📊 Performance Summary
 
 
-Model	Test Accuracy	Notes
+| Model            | Test Accuracy | Notes                                         |
+| ---------------- | ------------- | --------------------------------------------- |
+| **VGG16**        | 56.49%        | Strongest generalization on "Fresh" class     |
+| **ViT**          | 52.61%        | Struggled with minority classes               |
+| **Hybrid Model** | 54.35%        | Biased toward "Not Fresh"; needs optimization |
 
-
-VGG16	56.49% (Strongest generalization on "Fresh" class)
-
-
-ViT	52.61% (Struggled with minority classes)
-
-
-Hybrid Model	54.35%	(Biased toward "Not Fresh"; needs optimization)
 
 ![image](https://github.com/user-attachments/assets/0758d22f-3647-49e5-8439-c06db2d29b83)
 
