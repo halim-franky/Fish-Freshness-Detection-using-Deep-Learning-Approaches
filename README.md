@@ -22,9 +22,9 @@ Despite class imbalances and subtle visual differences, the models attempt to ge
 # 🔬 Research Objectives
 
 
-Develop a deep learning pipeline to classify fish freshness using fish eye images.
+1. Develop a deep learning pipeline to classify fish freshness using fish eye images.
 
-Compare performance across:
+2. Compare performance across:
 
 <ul>
 <li>VGG16 (CNN-based)</li>
@@ -35,9 +35,9 @@ Compare performance across:
 
 </ul>
 
-Address dataset imbalance with augmentation.
+3. Address dataset imbalance with augmentation.
 
-Evaluate classification performance.
+4. Evaluate classification performance.
 
 # 🧠 Model Architectures
 
