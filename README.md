@@ -141,8 +141,7 @@ Key Libraries:
 # 📁 Dataset
 
 
-Source: The Freshness of Fish Eyes Dataset (Link: <a href="https://data.mendeley.com/datasets/xzyx7pbr3w/1">The Freshness of the Fish Eyes Dataset
-</a>)
+Source: The Freshness of Fish Eyes Dataset
 
 Classes: Highly Fresh, Fresh, Not Fresh
 
