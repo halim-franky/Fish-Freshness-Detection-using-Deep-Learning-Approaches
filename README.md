@@ -87,15 +87,7 @@ The following pipeline outlines the key steps taken to develop and evaluate the 
 - Fine-tuned top layers after initial training
 
 5. Evaluation
-- Assessed models on the test set using:
-
-- Accuracy
-
-- Confusion Matrix
-
-- Precision, Recall, F1-Score
-
-- Visualized classification results for analysis
+- Assessed models on the test set 
 
 6. Result Interpretation
 - Compared performance across models
@@ -149,7 +141,7 @@ Key Libraries:
 # 📁 Dataset
 
 
-Source: The Freshness of Fish Eyes Dataset
+Source: The Freshness of Fish Eyes Dataset (Link: <a href="https://data.mendeley.com/datasets/xzyx7pbr3w/1">)
 
 Classes: Highly Fresh, Fresh, Not Fresh
 
@@ -162,18 +154,6 @@ Preprocessing:
 3. Augmentation applied to underrepresented classes:
 
 4. Rotation (30°), width/height shift (20%), shear (20%), zoom (20%), horizontal flip
-
-# 🧪 Evaluation Metrics
-
-<ul>
-<li>Accuracy</li>
-
-<li>Precision / Recall / F1-Score</li>
-
-<li>Confusion Matrix</li>
-
-<li>Evaluation was performed on the 10% held-out test set after fine-tuning.</li>
-</ul>
 
 # 📌 Future Directions
 
