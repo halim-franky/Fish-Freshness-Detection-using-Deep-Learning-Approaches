@@ -17,7 +17,7 @@ The classification task categorizes images into three classes:
 <li>Not Fresh</li>
 </ul>
 
-Despite class imbalances and subtle visual differences, our models attempt to generalize across categories through data augmentation and fine-tuning.
+Despite class imbalances and subtle visual differences, the models attempt to generalize across categories through data augmentation and fine-tuning.
 
 # 🔬 Research Objectives
 
