@@ -6,7 +6,7 @@ This project investigates the use of deep learning architectures including VGG16
 # 📘 Project Summary
 
 
-Ensuring the freshness of fish is critical for public health, food safety, and minimizing economic losses in seafood logistics. Traditional inspection methods are often subjective and inconsistent. In this project, we employ computer vision and transfer learning techniques to automate freshness detection using eye images from The Freshness of Fish Eyes Dataset.
+Ensuring the freshness of fish is critical for public health, food safety, and minimizing economic losses in seafood logistics. Traditional inspection methods are often subjective and inconsistent. In this project, computer vision and transfer learning techniques help to automate freshness detection using eye images from The Freshness of Fish Eyes Dataset.
 
 The classification task categorizes images into three classes:
 <ul>
