@@ -37,7 +37,7 @@ Compare performance across:
 
 Address dataset imbalance with augmentation.
 
-Evaluate classification performance with accuracy, confusion matrix, and classification report.
+Evaluate classification performance.
 
 # 🧠 Model Architectures
 
