@@ -52,14 +52,58 @@ Processes image patches using self-attention mechanisms, capturing global image 
 Combines local feature extraction (VGG16) and global representation (ViT) through concatenated feature embeddings.
 
 # 🔄 Project Pipeline
-graph TD
-    A[Raw Dataset] --> B[Dataset Splitting (Train/Val/Test)]
-    B --> C[Data Augmentation (Balancing Classes)]
-    C --> D[Image Preprocessing (Resize 224x224, Normalize)]
-    D --> E[Model Training]
-    E --> F[VGG16 | ViT | VGG16+ViT]
-    F --> G[Evaluation: Accuracy, Confusion Matrix, F1-Score]
-    G --> H[Insights & Limitations]
+🔄 Project Pipeline
+The following pipeline outlines the key steps taken to develop and evaluate the fish freshness detection system:
+
+1. Dataset Preparation
+Downloaded and organized the Freshness of Fish Eyes Dataset
+
+Split into Train (70%), Validation (20%), and Test (10%)
+
+Resized all images to 224x224 pixels
+
+2. Data Augmentation & Balancing
+Applied transformations to underrepresented classes:
+
+Rotation, Shift, Zoom, Flip, Shear
+
+Balanced all classes to ensure fair model training
+
+3. Image Preprocessing
+Normalized pixel values between 0 and 1
+
+Verified class distributions and visual quality
+
+4. Model Training
+Model 1: VGG16 – Convolutional Neural Network (CNN)
+
+Model 2: Vision Transformer (ViT) – Self-attention-based model
+
+Model 3: Hybrid VGG16 + ViT – Combined feature fusion
+
+Used transfer learning with ImageNet weights
+
+Fine-tuned top layers after initial training
+
+5. Evaluation
+Assessed models on the test set using:
+
+Accuracy
+
+Confusion Matrix
+
+Precision, Recall, F1-Score
+
+Visualized classification results for analysis
+
+6. Result Interpretation
+Compared performance across models
+
+Analyzed model biases and misclassifications
+
+Discussed potential improvements and limitations
+
+
 
 
 # 📊 Performance Summary
