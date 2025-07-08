@@ -66,8 +66,6 @@ Dataset --> Dataset Splitting (Train/Val/Test) --> Data Augmentation (Balancing 
 | **Hybrid Model** | 54.35%        | Biased toward "Not Fresh"; needs optimization |
 
 
-![image](https://github.com/user-attachments/assets/0758d22f-3647-49e5-8439-c06db2d29b83)
-
 # 🧪 Challenges & Limitations
 
 <ul>
